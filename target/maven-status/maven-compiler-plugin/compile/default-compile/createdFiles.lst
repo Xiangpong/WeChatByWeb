@@ -1,0 +1,3 @@
+com\pong\WeChatByWeb\Controller\IndexContaller.class
+com\pong\WeChatByWeb\Interceptor\LoginInterceptor.class
+com\pong\WeChatByWeb\Pojo\User.class
