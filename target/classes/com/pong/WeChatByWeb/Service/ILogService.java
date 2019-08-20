@@ -1,6 +1,7 @@
 package com.pong.WeChatByWeb.Service;
 
 import com.pong.WeChatByWeb.Pojo.Log;
+
 import java.util.List;
 
 public interface ILogService {

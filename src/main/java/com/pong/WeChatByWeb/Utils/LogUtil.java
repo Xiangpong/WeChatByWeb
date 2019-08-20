@@ -1,4 +1,5 @@
 package com.pong.WeChatByWeb.Utils;
+
 import com.pong.WeChatByWeb.Pojo.Log;
 
 /**
@@ -12,7 +13,7 @@ public class LogUtil {
         log.setUserid(userid);
         log.setTime(time);
         log.setType(type);
-        log.setDatail(detail);
+        log.setDetail(detail);
         log.setIp(ip);
         return log;
     }

@@ -6,14 +6,17 @@ import com.pong.WeChatByWeb.Service.ILogService;
 import com.pong.WeChatByWeb.Utils.StringUtil;
 import org.springframework.stereotype.Service;
 
+
 import javax.annotation.Resource;
 import java.util.List;
 
-@Service(value = "logService")
+@Service
 public class LogServiceImpl implements ILogService {
 
     @Resource private ILogDao logDao;
     @Resource private Log log;
+
+
 
     @Override
     public List<Log> selectAll(int page, int pageSize) {
@@ -46,8 +49,7 @@ public class LogServiceImpl implements ILogService {
 
     @Override
     public boolean insert(Log log) {
-        int id = Integer.parseInt(StringUtil.getGuid());
-        log.setId(id);
+        log.setId(StringUtil.getGuid());
         return logDao.insert(log);
     }
 

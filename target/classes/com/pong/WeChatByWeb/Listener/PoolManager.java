@@ -16,7 +16,6 @@ import org.junit.Test;
 
 /**
  * @author :  吴湘鹏
- * @date :  2019年8月19日 10:54:49
  */
 public class PoolManager {
     private static String driver = "com.mysql.jdbc.Driver";

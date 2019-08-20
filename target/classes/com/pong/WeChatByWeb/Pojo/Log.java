@@ -1,56 +1,40 @@
 package com.pong.WeChatByWeb.Pojo;
 
+import org.springframework.stereotype.Repository;
+
+/**
+ * NAME   :  WebChat/com.amayadream.webchat.pojo
+ * Author :  Amayadream
+ * Date   :  2016.01.09 16:37
+ * TODO   :  系统日志实体类
+ */
+@Repository(value = "log")
 public class Log {
-    private Integer id;
+    private String id;      //日志编号
+    private String userid;  //用户名
+    private String time;    //时间
+    private String type;    //类型
+    private String detail;  //详情
+    private String ip;      //ip地址
 
-    private String userid;
+    /**
+     * getter&setter
+     * @return
+     */
+    public String getDetail() {
+        return detail;
+    }
 
-    private String time;
+    public void setDetail(String detail) {
+        this.detail = detail;
+    }
 
-    private String type;
-
-    private String datail;
-
-    private String ip;
-
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
-    }
-
-    public String getUserid() {
-        return userid;
-    }
-
-    public void setUserid(String userid) {
-        this.userid = userid == null ? null : userid.trim();
-    }
-
-    public String getTime() {
-        return time;
-    }
-
-    public void setTime(String time) {
-        this.time = time == null ? null : time.trim();
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type == null ? null : type.trim();
-    }
-
-    public String getDatail() {
-        return datail;
-    }
-
-    public void setDatail(String datail) {
-        this.datail = datail == null ? null : datail.trim();
     }
 
     public String getIp() {
@@ -58,6 +42,30 @@ public class Log {
     }
 
     public void setIp(String ip) {
-        this.ip = ip == null ? null : ip.trim();
+        this.ip = ip;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getUserid() {
+        return userid;
+    }
+
+    public void setUserid(String userid) {
+        this.userid = userid;
     }
 }

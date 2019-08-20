@@ -11,7 +11,6 @@ import java.util.List;
 
 /**
  * Author :  吴湘鹏
- * Date   :  2019年8月19日 09:29:16
  */
 public class LoginInterceptor extends HandlerInterceptorAdapter {
 

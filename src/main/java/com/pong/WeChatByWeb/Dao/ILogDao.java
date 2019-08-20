@@ -1,11 +1,15 @@
 package com.pong.WeChatByWeb.Dao;
+
 import com.pong.WeChatByWeb.Pojo.Log;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service(value = "logDao")
+/**
+ * Author :  吴湘鹏
+ */
+@Service
 public interface ILogDao {
     List<Log> selectAll(@Param("offset") int offset, @Param("limit") int limit);
 

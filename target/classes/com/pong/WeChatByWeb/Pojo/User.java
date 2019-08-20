@@ -1,88 +1,44 @@
 package com.pong.WeChatByWeb.Pojo;
 
+import org.springframework.stereotype.Repository;
+
+/**
+ * NAME   :  WebChat/com.amayadream.webchat.pojo
+ * Author :  Amayadream
+ * Date   :  2016.01.08 14:06
+ * TODO   :
+ */
+@Repository(value = "user")
 public class User {
-    private String userid;
+    private String userid;      //用户名
+    private String password;    //密码
+    private String nickname;    //昵称
+    private int sex;            //性别
+    private int age;            //年龄
+    private String profilehead; //头像
+    private String profile;     //简介
+    private String firsttime;   //注册时间
+    private String lasttime;    //最后登录时间
+    private int status;      //账号状态(1正常 0禁用)
 
-    private String nickname;
-
-    private String password;
-
-    private String sex;
-
-    private Integer age;
-
-    private String profilehead;
-
-    private String profile;
-
-    private String fisttime;
-
-    private String lasttime;
-
-    private Integer status;
-
-    public String getUserid() {
-        return userid;
-    }
-
-    public void setUserid(String userid) {
-        this.userid = userid == null ? null : userid.trim();
-    }
-
-    public String getNickname() {
-        return nickname;
-    }
-
-    public void setNickname(String nickname) {
-        this.nickname = nickname == null ? null : nickname.trim();
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password == null ? null : password.trim();
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex == null ? null : sex.trim();
-    }
-
-    public Integer getAge() {
+    /**
+     * getter&setter
+     * @return
+     */
+    public int getAge() {
         return age;
     }
 
-    public void setAge(Integer age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
-    public String getProfilehead() {
-        return profilehead;
+    public String getFirsttime() {
+        return firsttime;
     }
 
-    public void setProfilehead(String profilehead) {
-        this.profilehead = profilehead == null ? null : profilehead.trim();
-    }
-
-    public String getProfile() {
-        return profile;
-    }
-
-    public void setProfile(String profile) {
-        this.profile = profile == null ? null : profile.trim();
-    }
-
-    public String getFisttime() {
-        return fisttime;
-    }
-
-    public void setFisttime(String fisttime) {
-        this.fisttime = fisttime == null ? null : fisttime.trim();
+    public void setFirsttime(String firsttime) {
+        this.firsttime = firsttime;
     }
 
     public String getLasttime() {
@@ -90,14 +46,62 @@ public class User {
     }
 
     public void setLasttime(String lasttime) {
-        this.lasttime = lasttime == null ? null : lasttime.trim();
+        this.lasttime = lasttime;
     }
 
-    public Integer getStatus() {
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getProfile() {
+        return profile;
+    }
+
+    public void setProfile(String profile) {
+        this.profile = profile;
+    }
+
+    public String getProfilehead() {
+        return profilehead;
+    }
+
+    public void setProfilehead(String profilehead) {
+        this.profilehead = profilehead;
+    }
+
+    public int getSex() {
+        return sex;
+    }
+
+    public void setSex(int sex) {
+        this.sex = sex;
+    }
+
+    public int getStatus() {
         return status;
     }
 
-    public void setStatus(Integer status) {
+    public void setStatus(int status) {
         this.status = status;
+    }
+
+    public String getUserid() {
+        return userid;
+    }
+
+    public void setUserid(String userid) {
+        this.userid = userid;
     }
 }

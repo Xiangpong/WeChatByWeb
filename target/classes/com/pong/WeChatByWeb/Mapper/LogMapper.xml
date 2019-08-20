@@ -1,226 +1,62 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.pong.mapper.LogMapper" >
-  <resultMap id="BaseResultMap" type="com.pong.WeChatByWeb.pojo.Log" >
-    <id column="id" property="id" jdbcType="INTEGER" />
-    <result column="userid" property="userid" jdbcType="VARCHAR" />
-    <result column="time" property="time" jdbcType="VARCHAR" />
-    <result column="type" property="type" jdbcType="VARCHAR" />
-    <result column="datail" property="datail" jdbcType="VARCHAR" />
-    <result column="ip" property="ip" jdbcType="VARCHAR" />
-  </resultMap>
-  <sql id="Example_Where_Clause" >
-    <where >
-      <foreach collection="oredCriteria" item="criteria" separator="or" >
-        <if test="criteria.valid" >
-          <trim prefix="(" suffix=")" prefixOverrides="and" >
-            <foreach collection="criteria.criteria" item="criterion" >
-              <choose >
-                <when test="criterion.noValue" >
-                  and ${criterion.condition}
-                </when>
-                <when test="criterion.singleValue" >
-                  and ${criterion.condition} #{criterion.value}
-                </when>
-                <when test="criterion.betweenValue" >
-                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
-                </when>
-                <when test="criterion.listValue" >
-                  and ${criterion.condition}
-                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
-                    #{listItem}
-                  </foreach>
-                </when>
-              </choose>
-            </foreach>
-          </trim>
-        </if>
-      </foreach>
-    </where>
+<mapper namespace="com.pong.WeChatByWeb.Dao.ILogDao">
+
+    <resultMap id="BaseResultMap" type="com.pong.WeChatByWeb.Pojo.Log">
+        <id column="ID" property="id" jdbcType="VARCHAR"/>
+        <result column="USERID" property="userid" jdbcType="VARCHAR"/>
+        <result column="TIME" property="time" jdbcType="VARCHAR"/>
+        <result column="TYPE" property="type" jdbcType="VARCHAR"/>
+        <result column="DETAIL" property="detail" jdbcType="VARCHAR"/>
+        <result column="IP" property="ip" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+    ID, USERID, TIME, TYPE, DETAIL, IP
   </sql>
-  <sql id="Update_By_Example_Where_Clause" >
-    <where >
-      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
-        <if test="criteria.valid" >
-          <trim prefix="(" suffix=")" prefixOverrides="and" >
-            <foreach collection="criteria.criteria" item="criterion" >
-              <choose >
-                <when test="criterion.noValue" >
-                  and ${criterion.condition}
-                </when>
-                <when test="criterion.singleValue" >
-                  and ${criterion.condition} #{criterion.value}
-                </when>
-                <when test="criterion.betweenValue" >
-                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
-                </when>
-                <when test="criterion.listValue" >
-                  and ${criterion.condition}
-                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
-                    #{listItem}
-                  </foreach>
-                </when>
-              </choose>
-            </foreach>
-          </trim>
-        </if>
-      </foreach>
-    </where>
-  </sql>
-  <sql id="Base_Column_List" >
-    id, userid, time, type, datail, ip
-  </sql>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.pong.WeChatByWeb.pojo.LogExample" >
-    select
-    <if test="distinct" >
-      distinct
-    </if>
-    <include refid="Base_Column_List" />
-    from log
-    <if test="_parameter != null" >
-      <include refid="Example_Where_Clause" />
-    </if>
-    <if test="orderByClause != null" >
-      order by ${orderByClause}
-    </if>
+
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT id, userid, time, type, detail, ip
+        FROM log
+        ORDER BY TIME DESC
+        LIMIT #{offset}, #{limit}
   </select>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
-    select 
-    <include refid="Base_Column_List" />
-    from log
-    where id = #{id,jdbcType=INTEGER}
+
+    <select id="selectLogByUserid" resultMap="BaseResultMap">
+        SELECT id, userid, time, type, detail, ip
+        FROM log
+        WHERE USERID = #{userid, jdbcType=VARCHAR}
+        ORDER BY TIME DESC
+        LIMIT #{offset}, #{limit}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
-    delete from log
-    where id = #{id,jdbcType=INTEGER}
-  </delete>
-  <delete id="deleteByExample" parameterType="com.pong.WeChatByWeb.pojo.LogExample" >
-    delete from log
-    <if test="_parameter != null" >
-      <include refid="Example_Where_Clause" />
-    </if>
-  </delete>
-  <insert id="insert" parameterType="com.pong.WeChatByWeb.pojo.Log" >
-    insert into log (id, userid, time, 
-      type, datail, ip)
-    values (#{id,jdbcType=INTEGER}, #{userid,jdbcType=VARCHAR}, #{time,jdbcType=VARCHAR}, 
-      #{type,jdbcType=VARCHAR}, #{datail,jdbcType=VARCHAR}, #{ip,jdbcType=VARCHAR})
+
+    <select id="selectCount" resultMap="BaseResultMap">
+        SELECT COUNT(*) USERID FROM log
+    </select>
+
+    <select id="selectCountByUserid" resultMap="BaseResultMap">
+    SELECT COUNT(*) USERID FROM log
+    WHERE USERID = #{userid, jdbcType=VARCHAR}
+  </select>
+
+    <insert id="insert" parameterType="com.pong.WeChatByWeb.Pojo.Log">
+    INSERT INTO log (ID, USERID, TIME, TYPE, DETAIL, IP)
+    VALUES (#{id, jdbcType=VARCHAR}, #{userid, jdbcType=VARCHAR}, #{time, jdbcType=VARCHAR}, #{type, jdbcType=INTEGER},
+    #{detail, jdbcType=INTEGER}, #{ip, jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.pong.WeChatByWeb.pojo.Log" >
-    insert into log
-    <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="id != null" >
-        id,
-      </if>
-      <if test="userid != null" >
-        userid,
-      </if>
-      <if test="time != null" >
-        time,
-      </if>
-      <if test="type != null" >
-        type,
-      </if>
-      <if test="datail != null" >
-        datail,
-      </if>
-      <if test="ip != null" >
-        ip,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="id != null" >
-        #{id,jdbcType=INTEGER},
-      </if>
-      <if test="userid != null" >
-        #{userid,jdbcType=VARCHAR},
-      </if>
-      <if test="time != null" >
-        #{time,jdbcType=VARCHAR},
-      </if>
-      <if test="type != null" >
-        #{type,jdbcType=VARCHAR},
-      </if>
-      <if test="datail != null" >
-        #{datail,jdbcType=VARCHAR},
-      </if>
-      <if test="ip != null" >
-        #{ip,jdbcType=VARCHAR},
-      </if>
-    </trim>
-  </insert>
-  <select id="countByExample" parameterType="com.pong.WeChatByWeb.pojo.LogExample" resultType="java.lang.Integer" >
-    select count(*) from log
-    <if test="_parameter != null" >
-      <include refid="Example_Where_Clause" />
-    </if>
-  </select>
-  <update id="updateByExampleSelective" parameterType="map" >
-    update log
-    <set >
-      <if test="record.id != null" >
-        id = #{record.id,jdbcType=INTEGER},
-      </if>
-      <if test="record.userid != null" >
-        userid = #{record.userid,jdbcType=VARCHAR},
-      </if>
-      <if test="record.time != null" >
-        time = #{record.time,jdbcType=VARCHAR},
-      </if>
-      <if test="record.type != null" >
-        type = #{record.type,jdbcType=VARCHAR},
-      </if>
-      <if test="record.datail != null" >
-        datail = #{record.datail,jdbcType=VARCHAR},
-      </if>
-      <if test="record.ip != null" >
-        ip = #{record.ip,jdbcType=VARCHAR},
-      </if>
-    </set>
-    <if test="_parameter != null" >
-      <include refid="Update_By_Example_Where_Clause" />
-    </if>
-  </update>
-  <update id="updateByExample" parameterType="map" >
-    update log
-    set id = #{record.id,jdbcType=INTEGER},
-      userid = #{record.userid,jdbcType=VARCHAR},
-      time = #{record.time,jdbcType=VARCHAR},
-      type = #{record.type,jdbcType=VARCHAR},
-      datail = #{record.datail,jdbcType=VARCHAR},
-      ip = #{record.ip,jdbcType=VARCHAR}
-    <if test="_parameter != null" >
-      <include refid="Update_By_Example_Where_Clause" />
-    </if>
-  </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.pong.WeChatByWeb.pojo.Log" >
-    update log
-    <set >
-      <if test="userid != null" >
-        userid = #{userid,jdbcType=VARCHAR},
-      </if>
-      <if test="time != null" >
-        time = #{time,jdbcType=VARCHAR},
-      </if>
-      <if test="type != null" >
-        type = #{type,jdbcType=VARCHAR},
-      </if>
-      <if test="datail != null" >
-        datail = #{datail,jdbcType=VARCHAR},
-      </if>
-      <if test="ip != null" >
-        ip = #{ip,jdbcType=VARCHAR},
-      </if>
-    </set>
-    where id = #{id,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.pong.WeChatByWeb.pojo.Log" >
-    update log
-    set userid = #{userid,jdbcType=VARCHAR},
-      time = #{time,jdbcType=VARCHAR},
-      type = #{type,jdbcType=VARCHAR},
-      datail = #{datail,jdbcType=VARCHAR},
-      ip = #{ip,jdbcType=VARCHAR}
-    where id = #{id,jdbcType=INTEGER}
-  </update>
+
+    <delete id="delete" parameterType="string">
+    DELETE FROM log
+    WHERE ID = #{id, jdbcType=VARCHAR}
+  </delete>
+
+    <delete id="deleteThisUser" parameterType="string">
+    DELETE FROM log
+    WHERE USERID = #{userid, jdbcType=VARCHAR}
+  </delete>
+
+    <delete id="deleteAll">
+    DELETE FROM log
+  </delete>
+
 </mapper>
