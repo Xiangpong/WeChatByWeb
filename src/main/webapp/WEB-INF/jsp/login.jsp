@@ -11,21 +11,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>WebChat | 登陆</title>
+    <title> WeChatByWeb | 登陆</title>
     <link href="<%=path%>/static/source/css/login.css" rel='stylesheet' type='text/css' />
     <script src="<%=path%>/static/plugins/jquery/jquery-2.1.4.min.js"></script>
     <script src="<%=path%>/static/plugins/layer/layer.js"></script>
 </head>
 <body>
 
-<h1>WebChat</h1>
+<h1>WeChatByWeb</h1>
 <div class="login-form">
-    <div class="close"> </div>
-    <div class="head-info">
-        <label class="lbl-1"></label>
-        <label class="lbl-2"></label>
-        <label class="lbl-3"></label>
-    </div>
     <div class="clear"> </div>
     <div class="avtar"><img src="<%=path%>/static/source/img/avtar.png" /></div>
     <form id="login-form" action="<%=path%>/user/login" method="post" onsubmit="return checkLoginForm()">

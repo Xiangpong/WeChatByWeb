@@ -90,7 +90,7 @@
                 <div class="am-tab-panel am-fade" id="tab2">
                     <form class="am-form am-form-horizontal" action="${ctx}/${userid}/upload" enctype="multipart/form-data" method="post" onsubmit="return checkFileType();" style="text-align: center;">
                         <div style="text-align: center;margin-bottom: 10px">
-                            <img class="am-circle" src="${ctx}/${user.profilehead}" width="140" height="140" alt="Amayadream"/>
+                            <img class="am-circle" src="${ctx}/${user.profilehead}" width="140" height="140" alt="上传头像"/>
                         </div>
                         <div class="am-form-group am-form-file">
                             <button type="button" class="am-btn am-btn-secondary am-btn-sm">

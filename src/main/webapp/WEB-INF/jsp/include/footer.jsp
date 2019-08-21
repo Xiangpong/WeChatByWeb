@@ -9,5 +9,5 @@
 
 <footer style="text-align: center">
     <hr>
-    <p class="am-padding-left">© 2016 <a href="http://www.amayadream.com">Amayadream</a>. </p>
+    <p class="am-padding-left">© 2019 <a href="http://www.amayadream.com">pong</a>. </p>
 </footer>

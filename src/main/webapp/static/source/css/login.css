@@ -29,7 +29,7 @@ img{max-width:100%;}
 /*end reset*/
 /****-----start-body----****/
 body{
-	background: url(../img/bg5.jpg) no-repeat 0px 0px;
+	background: url(../img/bg8.jpg) no-repeat 0px 0px;
 	font-family: 'Open Sans', sans-serif;
 	background-size:cover;
 	-webkit-background-size:cover;
@@ -67,19 +67,24 @@ h1 {
 	  text-align: center;
 	  padding-top: 4em;
 	  font-weight: 400;
-	  color: #2B2B36;
+	  color: #ffff;
 	  font-size: 2em;
 }
 .login-form {
-	background: #2b2b36;
+
 	position: relative;
 	width: 30%;
 	margin: 3% auto 0 auto;
 	text-align: center;
 	border-radius: 15px;
+
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	-o-border-radius: 15px;
+	-webkit-box-shadow: 16px 20px 16px -6px rgba(138,135,138,1);
+	-moz-box-shadow: 16px 20px 16px -6px rgba(138,135,138,1);
+	box-shadow: 16px 20px 16px -6px rgba(138,135,138,1)
+
 }
 .head img {
 	width: 100%;
@@ -107,25 +112,25 @@ h1 {
 input[type="text"] {
 	  width: 70%;
 	  padding: 1em 2em 1em 3em;
-	  color: #9199aa;
-	  font-size: 18px;
+	  color: #ffffff;
+	  font-size: 19px;
 	  outline: none;
 	  background: url(../img/adm.png) no-repeat 10px 15px;
 	  border: none;
 	  font-weight: 100;
-	  border-bottom: 1px solid#484856;
+	  border-bottom: 1px solid#59995d;
 	  margin-top: 2em;
 }
  input[type="password"]{
 	  width: 70%;
 	  padding: 1em 2em 1em 3em;
-	  color: #dd3e3e;
-	  font-size: 18px;
+	  color: #ffffff;
+	  font-size: 20px;
 	  outline: none;
 	  background: url(../img/key.png) no-repeat 10px 23px;
 	  border: none;
 	  font-weight: 100;
-	  border-bottom: 1px solid#484856;
+	  border-bottom: 1px solid#59995d;
 	  margin-bottom: 3em;
  }
 input[type="submit"]{
@@ -135,7 +140,7 @@ input[type="submit"]{
   border: none;
   background: #3ea751;
   width: 100%;
-  padding: 18px 0;
+  padding: 15px 0;
   border-bottom-left-radius: 15px;
 	-webkit-border-bottom-left-radius: 15px;
 	-moz-border-bottom-left-radius: 15px;
@@ -161,33 +166,7 @@ input[type="submit"]:hover {
 	-moz-transition: 1s all;
 	-o-transition: 1s all;
 }
-label.lbl-1 {
-  background: #6756ea;
-  width: 20px;
-  height: 20px;
-  display: block;
-  float: right;
-  border-radius: 50%;
-  margin: 16px 10px 0px 0px;
-}
-label.lbl-2 {
-  background: #ea569a;
-  width: 20px;
-  height: 20px;
-  display: block;
-  float: right;
-  border-radius: 50%;
-   margin: 16px 10px 0px 0px;
-}
-label.lbl-3 {
-  background: #f1c85f;
-  width: 20px;
-  height: 20px;
-  display: block;
-  float: right;
-  border-radius: 50%;
-  margin: 16px 10px 0px 0px;
-}
+
 /*--copyrights--*/
 .copy-rights{
 	text-align: center;
@@ -284,7 +263,7 @@ label.lbl-3 {
 	input[type="text"] {
 	  width: 62%;
 	  padding: 1.2em 2em .5em 2.5em;
-	  font-size: 17px;
+	  font-size: 19px;
 	  margin-top: .5em;
 	}
 	input[type="password"] {
@@ -301,15 +280,7 @@ label.lbl-3 {
 	.head-info {
 	  height: 35px;
 	  }
-	label.lbl-1 {
-	  margin: 8px 10px 0px 0px;
-	}
-	label.lbl-2 {
-	  margin: 8px 10px 0px 0px;
-	}
-	label.lbl-3 {
-	  margin: 8px 10px 0px 0px;
-	}
+
 	.close {
 	  left: 16px;
 	  top: 13px;

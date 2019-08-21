@@ -15,14 +15,15 @@
     <script src="${ctx}/plugins/sockjs/sockjs.js"></script>
 </head>
 <body>
+<jsp:include page="include/header.jsp"/>
 <div class="am-cf admin-main">
     <jsp:include page="include/sidebar.jsp"/>
 
     <!-- content start -->
     <div class="admin-content">
-        <div class="" style="width: 80%;float:left;">
+        <div class="" style="width:80%;float:left;">
             <!-- 聊天区 -->
-            <div class="am-scrollable-vertical" id="chat-view" style="height: 510px;">
+            <div class="am-scrollable-vertical" id="chat-view" style="height: 400px">
                 <ul class="am-comments-list am-comments-list-flip" id="chat">
                 </ul>
             </div>
