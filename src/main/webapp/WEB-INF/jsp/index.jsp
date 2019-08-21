@@ -20,32 +20,32 @@
     <jsp:include page="include/sidebar.jsp"/>
 
     <!-- content start -->
-    <div class="admin-content">
-        <div class="" style="width:80%;float:left;">
+    <div class="admin-content" >
+        <div class="" style="width:80%;float:left;padding-left: 20px">
             <!-- 聊天区 -->
             <div class="am-scrollable-vertical" id="chat-view" style="height: 400px">
                 <ul class="am-comments-list am-comments-list-flip" id="chat">
                 </ul>
             </div>
             <!-- 输入区 -->
-            <div class="am-form-group am-form">
-                <textarea class="" id="message" name="message" rows="5"  placeholder="这里输入你想发送的信息..."></textarea>
+            <div class="am-form-group am-form" >
+                <textarea class="" id="message" name="message" rows="5"  placeholder="畅所欲言......"></textarea>
             </div>
             <!-- 接收者 -->
             <div class="" style="float: left">
-                <p class="am-kai">发送给 : <span id="sendto">全体成员</span><button class="am-btn am-btn-xs am-btn-danger" onclick="$('#sendto').text('全体成员')">复位</button></p>
+                <p class="am-kai">发送给：<span id="sendto">全体成员</span><button style="margin-left: 5px" class="am-btn am-btn-xs am-btn-danger" onclick="$('#sendto').text('全体成员')">复位</button></p>
             </div>
             <!-- 按钮区 -->
             <div class="am-btn-group am-btn-group-xs" style="float:right;">
                 <button class="am-btn am-btn-default" type="button" onclick="getConnection()"><span class="am-icon-plug"></span> 连接</button>
-                <button class="am-btn am-btn-default" type="button" onclick="closeConnection()"><span class="am-icon-remove"></span> 断开</button>
-                <button class="am-btn am-btn-default" type="button" onclick="checkConnection()"><span class="am-icon-bug"></span> 检查</button>
+                <button class="am-btn am-btn-default" type="button" onclick="closeConnection()"><span class="am-icon-remove"></span> 断开连接</button>
+                <button class="am-btn am-btn-default" type="button" onclick="checkConnection()"><span class="am-icon-bug"></span> 检查连接</button>
                 <button class="am-btn am-btn-default" type="button" onclick="clearConsole()"><span class="am-icon-trash-o"></span> 清屏</button>
                 <button class="am-btn am-btn-default" type="button" onclick="sendMessage()"><span class="am-icon-commenting"></span> 发送</button>
             </div>
         </div>
         <!-- 列表区 -->
-        <div class="am-panel am-panel-default" style="float:right;width: 20%;">
+        <div class="am-panel am-panel-default" style="float:right;width: 20%;padding: 0 10px 10px 10px">
             <div class="am-panel-hd">
                 <h3 class="am-panel-title">在线列表 [<span id="onlinenum"></span>]</h3>
             </div>

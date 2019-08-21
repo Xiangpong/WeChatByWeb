@@ -8,7 +8,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
 <c:set var="ctx" value="${pageContext.request.contextPath}"/>
-<header class="am-topbar admin-header">
+<header class="am-topbar admin-header" style="background: #b4e0da">
     <div class="am-topbar-brand">
         <i class="am-icon-github"></i> <strong>WeChat</strong> <small>唠嗑</small>
     </div>

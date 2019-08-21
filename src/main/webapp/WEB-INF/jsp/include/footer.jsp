@@ -8,6 +8,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <footer style="text-align: center">
-    <hr>
-    <p class="am-padding-left">© 2019 <a href="http://www.amayadream.com">pong</a>. </p>
+
+    <p class="am-padding-left">© 2019 <a href="https://xiangpong.github.io/">pong</a>. </p>
 </footer>

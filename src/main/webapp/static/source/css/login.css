@@ -77,7 +77,6 @@ h1 {
 	margin: 3% auto 0 auto;
 	text-align: center;
 	border-radius: 15px;
-
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	-o-border-radius: 15px;
@@ -112,7 +111,7 @@ h1 {
 input[type="text"] {
 	  width: 70%;
 	  padding: 1em 2em 1em 3em;
-	  color: #ffffff;
+	  color: #94fcff;
 	  font-size: 19px;
 	  outline: none;
 	  background: url(../img/adm.png) no-repeat 10px 15px;
@@ -124,7 +123,7 @@ input[type="text"] {
  input[type="password"]{
 	  width: 70%;
 	  padding: 1em 2em 1em 3em;
-	  color: #ffffff;
+	  color: #94fcff;
 	  font-size: 20px;
 	  outline: none;
 	  background: url(../img/key.png) no-repeat 10px 23px;

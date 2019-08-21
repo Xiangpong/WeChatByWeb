@@ -34,7 +34,7 @@
             </ul>
             <div class="am-tabs-bd">
                 <div class="am-tab-panel am-fade am-in am-active" id="tab1">
-                    如何使用
+                    如何使用：用鼠标
                 </div>
             </div>
         </div>
