@@ -19,7 +19,7 @@
 <body>
 
 <h1>WeChatByWeb</h1>
-<div class="login-form">
+<div class="login-form" id="loginDiv">
     <div class="clear"> </div>
     <div class="avtar"><img src="<%=path%>/static/source/img/avtar.png" /></div>
     <form id="login-form" action="<%=path%>/user/login" method="post" onsubmit="return checkLoginForm()">
@@ -30,8 +30,35 @@
         <div class="key">
             <input type="password" id="password" name="password" placeholder="请输入密码">
         </div>
+
+        <div style="margin-bottom: 20px;float: right;padding-right: 20px;font-size: 18px">
+            <a style="color: #e0bacb" id="res" onclick="toRegister()">还没帐号？请注册</a>
+        </div>
         <div class="signin">
-            <input type="submit" id="submit" value="Login" >
+            <input type="submit" id="submit" value="登录" >
+        </div>
+    </form>
+</div>
+
+<div class="register-form" style="display: none" id="registerDiv">
+    <div class="clear"> </div>
+    <div class="avtar"><img src="<%=path%>/static/source/img/avtar.png" /></div>
+    <form id="register-form" action="<%=path%>/user/register" method="post" onsubmit="return checkRegForm()">
+        <div class="key">
+            <input type="text" id="New_username" name="userid" placeholder="请输入账号" >
+        </div>
+        <div class="key">
+            <input type="password" id="New_password" style="margin-bottom: 0px" name="password" placeholder="请输入密码">
+        </div>
+        <div class="key">
+            <input type="password" id="Rel_password" name="password1" placeholder="请确认密码">
+        </div>
+
+        <div style="margin-bottom: 20px;float: right;padding-right: 20px;font-size: 18px">
+            <a href="" style="color: #e0bacb">已有帐号？请登录</a>
+        </div>
+        <div class="signin">
+            <input type="submit" id="register" value="注册" >
         </div>
     </form>
 </div>
@@ -55,14 +82,9 @@
             });
         }
 
-        $('.close').on('click', function(c){
-            $('.login-form').fadeOut('slow', function(c){
-                $('.login-form').remove();
-            });
-        });
 
         $('#username,#password').change(function(){
-            $('#submit').attr('value','Login').css('background','#3ea751');
+            $('#submit').attr('value','登录').css('background','#3ea751');
         });
     });
 
@@ -95,6 +117,38 @@
         }
     }
 
+    function checkRegForm(){
+
+
+        var username = $('#New_username').val();
+        var psaaword1 = $('#New_password').val();
+        var password2 = $('#Rel_password').val();
+        if(isNull(username) && isNull(psaaword1)){
+            $('#register').attr('value','请输入账号和密码!!!').css('background','red');
+            return false;
+        }
+        if(isNull(username)){
+            $('#register').attr('value','请输入账号!!!').css('background','red');
+            return false;
+        }
+        if(isNull(psaaword1)){
+            $('#register').attr('value','请输入密码!!!').css('background','red');
+            return false;
+        }
+        if ((psaaword1).equals(password2)){
+            $('#register').attr('value','两次密码不一致!!!').css('background','red');
+            return false;
+        }
+        //if(username != 'Amaya' || password != '123456'){
+        //	$('#submit').attr('value','账号或密码错误!!!').css('background','red');
+        //	return false;
+        //}
+        else{
+            $('#register').attr('value','register~');
+            return true;
+        }
+    }
+
     /**
      * check the param if it's null or '' or undefined
      * @param input
@@ -107,6 +161,14 @@
         else{
             return false;
         }
+    }
+
+    function toRegister() {
+        $("#res").click(function () {
+
+            $("#loginDiv").attr("style","display:none")
+            $("#registerDiv").attr("style","display:block")
+        })
     }
 </script>
 </body>

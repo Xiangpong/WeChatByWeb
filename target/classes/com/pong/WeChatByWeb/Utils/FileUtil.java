@@ -1,14 +1,11 @@
 package com.pong.WeChatByWeb.Utils;
 
-import com.alibaba.fastjson.JSON;
-import org.junit.Test;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 
 /**
  * Author :  吴湘鹏
- * TODO   :
  */
 public class FileUtil {
 

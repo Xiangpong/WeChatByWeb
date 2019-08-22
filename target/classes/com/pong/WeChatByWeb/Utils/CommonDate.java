@@ -5,8 +5,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * @author :  Amayadream
- * @time :  2016.02.01 16:34
+ * @author :  吴湘鹏
  */
 public class CommonDate {
 

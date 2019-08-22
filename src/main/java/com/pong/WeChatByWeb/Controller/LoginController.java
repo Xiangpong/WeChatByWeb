@@ -70,4 +70,25 @@ public class LoginController {
         attributes.addFlashAttribute("message", defined.LOGOUT_SUCCESS);
         return "redirect:/user/login";
     }
+
+
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
+    public String register(String userid, String password, HttpSession session, RedirectAttributes attributes,
+                           WordDefined defined, CommonDate date, LogUtil logUtil, NetUtil netUtil, HttpServletRequest request) {
+
+        User user = new User();
+        user.setUserid(userid);
+        user.setPassword(password);
+        user.setAge(99);
+        user.setFirsttime(date.getTime24());
+        user.setNickname(userid);
+        user.setStatus(1);
+        userService.insert(user);
+        logService.insert(logUtil.setLog(userid, date.getTime24(), defined.LOG_TYPE_LOGIN, defined.LOG_DETAIL_USER_LOGIN, netUtil.getIpAddress(request)));
+        session.setAttribute("userid", userid);
+        session.setAttribute("login_status", true);
+        user.setLasttime(date.getTime24());
+        attributes.addFlashAttribute("message", defined.LOGIN_SUCCESS);
+        return "redirect:/chat";
+    }
 }

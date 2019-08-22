@@ -3,12 +3,25 @@
 基于SSM框架的WEB聊天项目
 
 ### 技术选型
-- Java/JSP/CSS/JS/Jquery
+- Java/JSP/CSS/JS/Jquery/Layer
 - Spring
 - SpringMVC
 - MyBatis
 - AmazeUI
 - Tomcat
+- MySql
+- WebSocket
+- Maven
+
+### 基本功能
+- 用户登录/注册
+- 用户信息更改
+- 头像文件上传
+- 在线多人群聊
+- 在线私聊
+- 图灵机器人
+- 系统日志记录
+
 
 ### 项目截图
 - 登录界面

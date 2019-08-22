@@ -4,7 +4,6 @@ import com.pong.WeChatByWeb.Pojo.Log;
 
 /**
  * Author :  吴湘鹏
- * TODO   :
  */
 public class LogUtil {
 
