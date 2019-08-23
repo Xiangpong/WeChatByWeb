@@ -3,45 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8e9dad69-d950-4b0b-9cd9-66226f607a8d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Utils/CommonDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Utils/CommonDate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Utils/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Utils/FileUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Utils/LogUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Utils/LogUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/springMVC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/source/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/source/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Utils/CommonDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Utils/CommonDate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Utils/CommonDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Utils/CommonDate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Utils/FileUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Utils/FileUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Utils/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Utils/FileUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Utils/LogUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Utils/LogUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Utils/LogUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Utils/LogUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-08-21" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/about_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/about_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/help_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/help_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/include/commonfile_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/include/commonfile_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/include/footer_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/include/footer_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/include/header_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/include/header_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/include/sidebar_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/include/sidebar_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/index_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/index_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/info_002dsetting_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/info_002dsetting_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/information_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/information_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/log_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/log_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/login_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/login_jsp.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -56,7 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
@@ -64,6 +25,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/sidebar.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="17" column="87" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -95,16 +65,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Mapper/UserMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="43" column="24" lean-forward="true" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Service/ILogService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -113,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Service/IUserService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
-              <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -140,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Pojo/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="217">
-              <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -208,7 +169,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/help.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/header.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/sidebar.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/about.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Utils/CommonDate.java" />
@@ -219,6 +179,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/springMVC.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/sidebar.jsp" />
       </list>
     </option>
   </component>
@@ -490,6 +451,16 @@
             </path>
             <path>
               <item name="WeChatByWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WeChatByWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WeChatByWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -674,7 +645,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566444703942" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566445014418" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SSMproject" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -760,12 +731,12 @@
       <workItem from="1566267942467" duration="3173000" />
       <workItem from="1566347754946" duration="10596000" />
       <workItem from="1566376085220" duration="6179000" />
-      <workItem from="1566434974955" duration="9666000" />
+      <workItem from="1566434974955" duration="10019000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44366000" />
+    <option name="totallyTimeSpent" value="44719000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -778,7 +749,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.61538464" visible="true" weight="0.2347561" />
       <window_info id="Structure" order="1" sideWeight="0.3846154" side_tool="true" weight="0.2347561" />
@@ -790,13 +760,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.93521595" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.93521595" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.54318935" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32890365" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32890365" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3255814" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3255814" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32890365" />
@@ -935,13 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/sidebar.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1177,7 +1140,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Service/IUserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1198,7 +1161,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Pojo/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
-          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1208,7 +1171,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="43" column="24" lean-forward="true" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1233,6 +1196,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/sidebar.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="17" column="87" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="87" />
         </state>
       </provider>
     </entry>
