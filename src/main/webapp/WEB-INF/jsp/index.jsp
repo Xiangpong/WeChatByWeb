@@ -12,7 +12,17 @@
 <head>
     <title>WebChat | 聊天</title>
     <jsp:include page="include/commonfile.jsp"/>
-    <script src="${ctx}/plugins/sockjs/sockjs.js"></script>
+    <script src="${ctx}../../static/plugins/sockjs/sockjs.js"></script>
+    <script src="../../static/source/js/Channel.js"></script>
+    <style type="text/css">
+        .toolbar {
+            border: 1px solid #ccc;
+        }
+        .text {
+            border: 1px solid #ccc;
+            height: 200px;
+        }
+    </style>
 </head>
 <body>
 <jsp:include page="include/header.jsp"/>
@@ -21,7 +31,7 @@
 
     <!-- content start -->
     <div class="admin-content" >
-        <div class="" style="width:80%;float:left;padding-left: 20px">
+        <div class="" style="width:80%;float:left;padding-left: 20px;">
             <!-- 聊天区 -->
             <div class="am-scrollable-vertical" id="chat-view" style="height: 400px">
                 <ul class="am-comments-list am-comments-list-flip" id="chat">
@@ -29,20 +39,50 @@
             </div>
             <!-- 输入区 -->
             <div class="am-form-group am-form" >
-                <textarea class="" id="message" name="message" rows="5"  placeholder="畅所欲言......"></textarea>
+                <textarea class=""  style="display: none" id="message" name="message"></textarea>
+
+                <div id="div1" class="toolbar">
+                </div>
+
+                <div id="div2" class="text"> <!--可使用 min-height 实现编辑区域自动增加高度-->
+                    <p>请输入内容</p>
+                </div>
+
+                <script type="text/javascript" src="../../static/source/js/wangEditor.min.js"></script>
+                <script type="text/javascript">
+                    var E = window.wangEditor
+                    var editor1 = new E('#div1', '#div2')  // 两个参数也可以传入 elem 对象，class 选择器
+                    var $text1 = $('#message')
+                    editor1.customConfig.uploadImgShowBase64 = true   // 使用 base64 保存图片
+                    editor1.customConfig.debug = true
+                    editor1.customConfig.onchange = function (html) {
+                        // 监控变化，同步更新到 textarea
+                        $text1.val(html)
+                    }
+                    editor1.create()
+                    // 初始化 textarea 的值
+                    $text1.val(editor1.txt.html())
+                </script>
             </div>
+
             <!-- 接收者 -->
             <div class="" style="float: left">
                 <p class="am-kai">发送给：<span id="sendto">全体成员</span><button style="margin-left: 5px" class="am-btn am-btn-xs am-btn-danger" onclick="$('#sendto').text('全体成员')">复位</button></p>
             </div>
             <!-- 按钮区 -->
-            <div class="am-btn-group am-btn-group-xs" style="float:right;">
+            <%--<div class="am-btn-group am-btn-group-xs" style="float:right;">--%>
+
+            <%--</div>--%>
+            <div style="float: right;padding-right: 20px"class="am-btn-group am-btn-group-sm ">
                 <button class="am-btn am-btn-default" type="button" onclick="getConnection()"><span class="am-icon-plug"></span> 连接</button>
                 <button class="am-btn am-btn-default" type="button" onclick="closeConnection()"><span class="am-icon-remove"></span> 断开连接</button>
                 <button class="am-btn am-btn-default" type="button" onclick="checkConnection()"><span class="am-icon-bug"></span> 检查连接</button>
                 <button class="am-btn am-btn-default" type="button" onclick="clearConsole()"><span class="am-icon-trash-o"></span> 清屏</button>
+                <label title="选择图片"type="button" class="am-btn am-btn-success"><input type="file" style="display: none;" accept="image/*" onchange="onPaste()">发送图片</label>
+                <button class="am-btn am-btn-default" type="button" onclick="clearConsole()"><span class="am-icon-file-video-o"></span> 视频通话</button>
                 <button class="am-btn am-btn-default" type="button" onclick="sendMessage()"><span class="am-icon-commenting"></span> 发送</button>
             </div>
+
         </div>
         <!-- 列表区 -->
         <div class="am-panel am-panel-default" style="float:right;width: 20%;padding: 0 10px 10px 10px">
@@ -76,7 +116,7 @@
                     {header: '连接选项'},
                     {text: '检查', action: checkConnection},
                     {text: '连接', action: getConnection},
-                    {text: '断开', action: closeConnection}
+                    {text: '断开', action: closeConnection},
                 ]
             },
             {
@@ -125,7 +165,7 @@
         layer.msg("产生异常", { offset: 0});
     };
     ws.onclose = function (evt) {
-        layer.msg("已经关闭连接", { offset: 0});
+         layer.msg("已经关闭连接1", { offset: 0});
     };
 
     /**
@@ -144,12 +184,14 @@
                 layer.msg("产生异常", { offset: 0});
             };
             ws.onclose = function (evt) {
-                layer.msg("已经关闭连接", { offset: 0});
+                layer.msg("已经关闭连接2", { offset: 0});
             };
         }else{
             layer.msg("连接已存在!", { offset: 0, shift: 6 });
         }
     }
+
+
 
     /**
      * 关闭连接
@@ -159,7 +201,7 @@
             ws.close();
             ws = null;
             $("#list").html("");    //清空在线列表
-            layer.msg("已经关闭连接", { offset: 0});
+            layer.msg("已经关闭连接3", { offset: 0});
         }else{
             layer.msg("未开启连接", { offset: 0, shift: 6 });
         }
@@ -185,22 +227,28 @@
             return;
         }
         var message = $("#message").val();
-        var to = $("#sendto").text() == "全体成员"? "": $("#sendto").text();
+        var to = $("#sendto").html() == "全体成员"? "": $("#sendto").html();
         if(message == null || message == ""){
             layer.msg("请不要惜字如金!", { offset: 0, shift: 6 });
             return;
         }
         $("#tuling").text() == "已上线"? tuling(message):console.log("图灵机器人未开启");  //检测是否加入图灵机器人
-        ws.send(JSON.stringify({
-            message : {
-                content : message,
-                from : '${userid}',
-                to : to,      //接收人,如果没有则置空,如果有多个接收人则用,分隔
-                time : getDateFull()
-            },
-            type : "message"
-        }));
+            var msg = JSON.stringify({
+                message : {
+                    content : message,
+                    from : '${userid}',
+                    to : to,      //接收人,如果没有则置空,如果有多个接收人则用,分隔
+                    time : getDateFull()
+                },
+                type : "message"
+            })
+
+            alert(msg)
+            ws.send(msg);
+
+
     }
+
 
     /**
      * 解析后台传来的消息
@@ -244,7 +292,7 @@
         var html = "<li class=\"am-comment "+isSef+" am-comment-primary\"><a href=\"#link-to-user-home\"><img width=\"48\" height=\"48\" class=\"am-comment-avatar\" alt=\"\" src=\"${ctx}/"+message.from+"/head\"></a><div class=\"am-comment-main\">\n" +
             "<header class=\"am-comment-hd\"><div class=\"am-comment-meta\">   <a class=\"am-comment-author\" href=\"#link-to-user\">"+message.from+"</a> 发表于<time> "+message.time+"</time> 发送给: "+to+" </div></header><div class=\"am-comment-bd\"> <p>"+message.content+"</p></div></div></li>";
         $("#chat").append(html);
-        $("#message").val("");  //清空输入区
+        $("#div2").val("");  //清空输入区
         var chat = $("#chat-view");
         chat.scrollTop(chat[0].scrollHeight);   //让聊天区始终滚动到最下面
     }
