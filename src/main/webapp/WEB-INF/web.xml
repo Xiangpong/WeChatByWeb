@@ -37,6 +37,16 @@
 
     <!-- Spring MVC servlet -->
     <servlet>
+        <description></description>
+        <display-name>UploadServlet</display-name>
+        <servlet-name>UploadServlet</servlet-name>
+        <servlet-class>com.pong.WeChatByWeb.Utils.wangEditorUpload</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadServlet</servlet-name>
+        <url-pattern>/UploadServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
         <servlet-name>SpringMVC</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>

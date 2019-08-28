@@ -19,9 +19,12 @@ com\pong\WeChatByWeb\Utils\NetUtil.class
 com\pong\WeChatByWeb\Utils\CommonValidate.class
 com\pong\WeChatByWeb\Controller\UserController.class
 com\pong\WeChatByWeb\WebSocket\ChatServer.class
+com\pong\WeChatByWeb\Utils\wangEditorUpload.class
 com\pong\WeChatByWeb\Listener\PoolManager.class
+com\pong\WeChatByWeb\Pojo\Result.class
 com\pong\WeChatByWeb\Utils\FileUtil.class
 com\pong\WeChatByWeb\Utils\UploadUtil.class
+com\pong\WeChatByWeb\Pojo\ResultUtil.class
 com\pong\WeChatByWeb\Utils\StringUtil.class
 com\pong\WeChatByWeb\WebSocket\VideoServer.class
 com\pong\WeChatByWeb\Utils\LogUtil.class

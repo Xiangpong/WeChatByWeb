@@ -15,7 +15,9 @@ D:\WeChatByWeb\src\main\java\com\pong\WeChatByWeb\WebSocket\ChatServer.java
 D:\WeChatByWeb\src\main\java\com\pong\WeChatByWeb\Service\IUserService.java
 D:\WeChatByWeb\src\main\java\com\pong\WeChatByWeb\WebSocket\VideoServer.java
 D:\WeChatByWeb\src\main\java\com\pong\WeChatByWeb\Utils\Result.java
+D:\WeChatByWeb\src\main\java\com\pong\WeChatByWeb\Utils\wangEditorUpload.java
 D:\WeChatByWeb\src\main\java\com\pong\WeChatByWeb\Utils\NetUtil.java
+D:\WeChatByWeb\src\main\java\com\pong\WeChatByWeb\Pojo\Result.java
 D:\WeChatByWeb\src\main\java\com\pong\WeChatByWeb\Utils\WordDefined.java
 D:\WeChatByWeb\src\main\java\com\pong\WeChatByWeb\Utils\UploadUtil.java
 D:\WeChatByWeb\src\main\java\com\pong\WeChatByWeb\Dao\IUserDao.java
@@ -24,4 +26,5 @@ D:\WeChatByWeb\src\main\java\com\pong\WeChatByWeb\Utils\CommonValidate.java
 D:\WeChatByWeb\src\main\java\com\pong\WeChatByWeb\Utils\StringUtil.java
 D:\WeChatByWeb\src\main\java\com\pong\WeChatByWeb\Service\ILogService.java
 D:\WeChatByWeb\src\main\java\com\pong\WeChatByWeb\Service\Impl\UserServiceImpl.java
+D:\WeChatByWeb\src\main\java\com\pong\WeChatByWeb\Pojo\ResultUtil.java
 D:\WeChatByWeb\src\main\java\com\pong\WeChatByWeb\Controller\LogController.java

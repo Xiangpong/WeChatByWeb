@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<footer style="text-align: center">
+<footer style="text-align: center;padding: 15px">
 
-    <p class="am-padding-left">© 2019 <a href="https://xiangpong.github.io/">pong</a>. </p>
+    <p class="am-padding-left">© 2019 <a href="https://xiangpong.github.io/">By Pong</a> <a href="https://github.com/Xiangpong"><img src="/static/source/img/github.png"></a> </p>
 </footer>

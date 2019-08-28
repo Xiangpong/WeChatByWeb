@@ -1,5 +1,4 @@
-# [WeChatByWeb网页聊天室](https://github.com/Xiangpong/WeChatByWeb)
-
+#  [P-LinkC聊天室](https://github.com/Xiangpong/WeChatByWeb)
 
 
 ### 项目思路
@@ -64,7 +63,7 @@ TCP聊天项目的改进版，结合当下互联网Web应用在市场的比重�
 ![登录界面.png](https://i.loli.net/2019/08/21/5EuNKVq4PRbQTzM.png)
 
 - 聊天界面
-![聊天界面.png](https://i.loli.net/2019/08/21/5EQaimtBzDCdj1W.png)
+![聊天界面2.png](https://i.loli.net/2019/08/28/mUdtow9cKqe5CSQ.png)
 
 - 个人资料
 ![个人信息.png](https://i.loli.net/2019/08/21/ZBsmgQkpq6Atl8u.png)

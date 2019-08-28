@@ -20,7 +20,7 @@
         }
         .text {
             border: 1px solid #ccc;
-            height: 200px;
+            height: 25%;
         }
     </style>
 </head>
@@ -33,7 +33,7 @@
     <div class="admin-content" >
         <div class="" style="width:80%;float:left;padding-left: 20px;">
             <!-- 聊天区 -->
-            <div class="am-scrollable-vertical" id="chat-view" style="height: 400px">
+            <div class="am-scrollable-vertical" id="chat-view" style="height: 63%">
                 <ul class="am-comments-list am-comments-list-flip" id="chat">
                 </ul>
             </div>
@@ -45,21 +45,24 @@
                 </div>
 
                 <div id="div2" class="text"> <!--可使用 min-height 实现编辑区域自动增加高度-->
-                    <p>请输入内容</p>
                 </div>
 
-                <script type="text/javascript" src="../../static/source/js/wangEditor.min.js"></script>
+                <script type="text/javascript" src="/static/source/js/wangEditor.min.js"></script>
                 <script type="text/javascript">
                     var E = window.wangEditor
                     var editor1 = new E('#div1', '#div2')  // 两个参数也可以传入 elem 对象，class 选择器
                     var $text1 = $('#message')
-                    editor1.customConfig.uploadImgShowBase64 = true   // 使用 base64 保存图片
-                    editor1.customConfig.debug = true
+                    editor1.customConfig.uploadImgServer = "/UploadServlet";
                     editor1.customConfig.onchange = function (html) {
                         // 监控变化，同步更新到 textarea
                         $text1.val(html)
                     }
+                    editor1.customConfig.onfocus = function () {
+                        editor1.txt.clear();
+
+                    }
                     editor1.create()
+                    editor1.txt.html('<p>请输入...</p>')
                     // 初始化 textarea 的值
                     $text1.val(editor1.txt.html())
                 </script>
@@ -67,7 +70,7 @@
 
             <!-- 接收者 -->
             <div class="" style="float: left">
-                <p class="am-kai">发送给：<span id="sendto">全体成员</span><button style="margin-left: 5px" class="am-btn am-btn-xs am-btn-danger" onclick="$('#sendto').text('全体成员')">复位</button></p>
+                <p>发送给：<span id="sendto">全体成员</span><button style="margin-left: 5px" class="am-btn am-btn-xs am-btn-danger" onclick="$('#sendto').text('全体成员')">复位</button></p>
             </div>
             <!-- 按钮区 -->
             <%--<div class="am-btn-group am-btn-group-xs" style="float:right;">--%>
@@ -78,9 +81,7 @@
                 <button class="am-btn am-btn-default" type="button" onclick="closeConnection()"><span class="am-icon-remove"></span> 断开连接</button>
                 <button class="am-btn am-btn-default" type="button" onclick="checkConnection()"><span class="am-icon-bug"></span> 检查连接</button>
                 <button class="am-btn am-btn-default" type="button" onclick="clearConsole()"><span class="am-icon-trash-o"></span> 清屏</button>
-                <label title="选择图片"type="button" class="am-btn am-btn-success"><input type="file" style="display: none;" accept="image/*" onchange="onPaste()">发送图片</label>
-                <button class="am-btn am-btn-default" type="button" onclick="clearConsole()"><span class="am-icon-file-video-o"></span> 视频通话</button>
-                <button class="am-btn am-btn-default" type="button" onclick="sendMessage()"><span class="am-icon-commenting"></span> 发送</button>
+                <button class="am-btn am-btn-success" type="button" onclick="sendMessage()"><span class="am-icon-commenting"></span> 发送</button>
             </div>
 
         </div>
@@ -242,8 +243,6 @@
                 },
                 type : "message"
             })
-
-            alert(msg)
             ws.send(msg);
 
 
@@ -320,8 +319,8 @@
         var html;
         $.getJSON("http://www.tuling123.com/openapi/api?key=6ad8b4d96861f17d68270216c880d5e3&info=" + message,function(data){
             if(data.code == 100000){
-                html = "<li class=\"am-comment am-comment-primary\"><a href=\"#link-to-user-home\"><img width=\"48\" height=\"48\" class=\"am-comment-avatar\" alt=\"\" src=\"${ctx}/static/img/robot.jpg\"></a><div class=\"am-comment-main\">\n" +
-                    "<header class=\"am-comment-hd\"><div class=\"am-comment-meta\">   <a class=\"am-comment-author\" href=\"#link-to-user\">Robot</a> 发表于<time> "+getDateFull()+"</time> 发送给: ${userid}</div></header><div class=\"am-comment-bd\"> <p>"+data.text+"</p></div></div></li>";
+                html = "<li class=\"am-comment am-comment-primary\"><a href=\"#link-to-user-home\"><img width=\"48\" height=\"48\" class=\"am-comment-avatar\" alt=\"\" src=\"${ctx}/static/source/img/robot.jpg\"></a><div class=\"am-comment-main\">\n" +
+                    "<header class=\"am-comment-hd\"><div class=\"am-comment-meta\">   <a class=\"am-comment-author\" href=\"#link-to-user\">阿图：）</a> 发表于<time> "+getDateFull()+"</time> 发送给: ${userid}</div></header><div class=\"am-comment-bd\"> <p>"+data.text+"</p></div></div></li>";
             }
             if(data.code == 200000){
                 html = "<li class=\"am-comment am-comment-primary\"><a href=\"#link-to-user-home\"><img width=\"48\" height=\"48\" class=\"am-comment-avatar\" alt=\"\" src=\"${ctx}/static/img/robot.jpg\"></a><div class=\"am-comment-main\">\n" +
