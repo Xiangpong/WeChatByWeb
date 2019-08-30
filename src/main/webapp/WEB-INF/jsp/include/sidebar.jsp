@@ -9,6 +9,11 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="ctx" value="${pageContext.request.contextPath}"/>
 <!-- sidebar start -->
+<style>
+    .am-list li{
+        background: #eef7f2;
+    }
+</style>
 <div class="admin-sidebar am-offcanvas" id="admin-offcanvas" style="width: 18%" >
     <div class="am-offcanvas-bar admin-offcanvas-bar" >
         <ul class="am-list admin-sidebar-list" >

@@ -69,7 +69,7 @@
             <artifactId>junit</artifactId>
             <version>${junit}</version>
             <!-- 表示开发的时候引入，发布的时候不会加载此包 -->
-            <!--<scope>test</scope>-->
+            <!--<scope>AEStest</scope>-->
         </dependency>
         <!-- junit 配置开始 -->
 
@@ -288,6 +288,21 @@
             <version>1.2.3</version>
         </dependency>
         <!-- mybatis 配置结束 -->
+
+        <!-- Base64编码需要  -->
+        <dependency>
+            <groupId>org.apache.directory.studio</groupId>
+            <artifactId>org.apache.commons.codec</artifactId>
+            <version>1.8</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.bouncycastle/com.springsource.org.bouncycastle.jce -->
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>com.springsource.org.bouncycastle.jce</artifactId>
+            <version>1.46.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>

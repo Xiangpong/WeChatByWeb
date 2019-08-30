@@ -2,6 +2,7 @@ package com.pong.WeChatByWeb.WebSocket;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.pong.WeChatByWeb.Utils.AesUtil;
 
 import javax.servlet.http.HttpSession;
 import javax.websocket.*;
@@ -23,6 +24,7 @@ public class ChatServer {
     private static CopyOnWriteArraySet<ChatServer> webSocketSet = new CopyOnWriteArraySet<ChatServer>();
     private Session session;    //与某个客户端的连接会话，需要通过它来给客户端发送数据
     private String userid;      //用户名
+    private String key; //密钥
     private HttpSession httpSession;    //request的session
 
     private static List list = new ArrayList<>();   //在线列表,记录用户名称
@@ -39,8 +41,10 @@ public class ChatServer {
         addOnlineCount();           //在线数加1;
         this.httpSession = (HttpSession) config.getUserProperties().get(HttpSession.class.getName());
         this.userid=(String) httpSession.getAttribute("userid");    //获取当前用户
+        this.key = AesUtil.getKey(); //获取密钥
+
         list.add(userid);           //将用户名加入在线列表
-        routetab.put(userid, session);   //将用户名和session绑定到路由表
+        routetab.put(userid,session);   //将用户名和session绑定到路由表
         String message = getMessage("[" + userid + "]加入聊天室,当前在线人数为"+getOnlineCount()+"位", "notice",  list);
         broadcast(message);     //广播
     }
