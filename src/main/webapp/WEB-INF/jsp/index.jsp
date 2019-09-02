@@ -12,8 +12,12 @@
 <head>
     <title>WebChat | 聊天</title>
     <jsp:include page="include/commonfile.jsp"/>
-    <script src="${ctx}../../static/plugins/sockjs/sockjs.js"></script>
+    <script src="${ctx}/static/plugins/sockjs/sockjs.js"></script>
     <script src="../../static/source/js/Channel.js"></script>
+    <script src="../../static/source/js/CryptoJs.js"></script>
+    <script src="../../static/source/js/jsencrypt.js"></script>
+    <script src="../../static/source/js/aesUtil.js"></script>
+    <script src="../../static/source/js/rasUtil.js"></script>
     <style type="text/css">
         .toolbar {
             border: 1px solid #ccc;
@@ -227,6 +231,7 @@
             layer.msg("连接未开启!", { offset: 0, shift: 6 });
             return;
         }
+
         var message = $("#message").val();
         var to = $("#sendto").html() == "全体成员"? "": $("#sendto").html();
         if(message == null || message == ""){
@@ -234,16 +239,21 @@
             return;
         }
         $("#tuling").text() == "已上线"? tuling(message):console.log("图灵机器人未开启");  //检测是否加入图灵机器人
-            var msg = JSON.stringify({
-                message : {
-                    content : message,
-                    from : '${userid}',
-                    to : to,      //接收人,如果没有则置空,如果有多个接收人则用,分隔
-                    time : getDateFull()
-                },
-                type : "message"
-            })
-            ws.send(msg);
+            let aesKey = aesUtil.genKey();
+            alert(aesKey)
+            let data = {
+                data:aesUtil.encrypt(JSON.stringify({
+                    message : {
+                        content : message,
+                        from : '${userid}',
+                        to : to,      //接收人,如果没有则置空,如果有多个接收人则用,分隔
+                        time : getDateFull()
+                    },
+                    type : "message"
+                }),aesKey),
+                aesKey
+            }
+            ws.send(JSON.stringify(data));
 
 
     }

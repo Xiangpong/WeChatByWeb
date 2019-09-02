@@ -9,7 +9,6 @@ com\pong\WeChatByWeb\Utils\CommonDate.class
 com\pong\WeChatByWeb\Service\ILogService.class
 com\pong\WeChatByWeb\Service\IUserService.class
 com\pong\WeChatByWeb\Service\Impl\UserServiceImpl.class
-com\pong\WeChatByWeb\Utils\REStest.class
 com\pong\WeChatByWeb\Interceptor\LoginInterceptor.class
 com\pong\WeChatByWeb\Pojo\User.class
 com\pong\WeChatByWeb\Utils\Result.class
@@ -30,5 +29,7 @@ com\pong\WeChatByWeb\Utils\StringUtil.class
 com\pong\WeChatByWeb\WebSocket\VideoServer.class
 com\pong\WeChatByWeb\Utils\AesUtil.class
 com\pong\WeChatByWeb\Utils\RsaUtil.class
+com\pong\WeChatByWeb\WebSocket\WebSocketServer.class
 com\pong\WeChatByWeb\Utils\LogUtil.class
 com\pong\WeChatByWeb\Utils\AEStest.class
+com\pong\WeChatByWeb\Utils\RSAtest.class

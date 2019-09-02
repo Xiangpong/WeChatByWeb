@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--CryptoJS jsencrypt -->
+    <script src="../static/source/js/CryptoJs.js"></script>
+    <script src="../static/source/js/jsencrypt.js"></script>
+    <script src="../static/source/js/aesUtil.js"></script>
+    <script src="../static/source/js/rasUtil.js"></script>
+</head>
+<body>
+<script>
+    //复杂对象
+    let user = {username: "欢子", password: 123456, remark: "abcd!@#$:"};
+
+    //key
+    let genKey = aesUtil.genKey();
+    //key加密
+    let ciphertext = aesUtil.encrypt(user,genKey);
+    //key解密
+    let plaintext = aesUtil.decrypt(ciphertext,genKey);
+
+    console.log("key：");console.log(genKey);
+    console.log("加密前：");console.log(user);
+    console.log("key加密后：" + ciphertext);
+    console.log("key解密后：");console.log(plaintext);
+</script>
+</body>
+</html>

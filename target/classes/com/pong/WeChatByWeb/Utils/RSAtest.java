@@ -2,7 +2,7 @@ package com.pong.WeChatByWeb.Utils;
 
 import org.apache.commons.codec.binary.Base64;
 
-public class REStest {
+public class RSAtest {
     public static void main(String[] args) {
         //字符串
         String str = "huanzi.qch@qq.com:欢子";

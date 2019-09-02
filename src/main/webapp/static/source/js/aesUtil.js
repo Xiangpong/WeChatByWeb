@@ -4,7 +4,7 @@
 var aesUtil = {
 
     //获取key，
-    genKey : function (length =16) {
+    genKey : function (length = 16) {
         let random = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
         let str = "";
         for (let i = 0; i < length; i++) {
@@ -34,3 +34,5 @@ var aesUtil = {
         return decString;
     }
 };
+
+aesUtil

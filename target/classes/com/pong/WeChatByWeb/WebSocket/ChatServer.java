@@ -2,12 +2,17 @@ package com.pong.WeChatByWeb.WebSocket;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.pong.WeChatByWeb.Utils.AesUtil;
+import com.pong.WeChatByWeb.Utils.RsaUtil;
+import org.apache.commons.codec.binary.Base64;
 
 import javax.servlet.http.HttpSession;
 import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -68,16 +73,42 @@ public class ChatServer {
      */
     @OnMessage
     public void onMessage(String _message) {
-        JSONObject chat = JSON.parseObject(_message);
+        String decrypt ="";
+        try {
+            //jackson
+            ObjectMapper mapper = new ObjectMapper();
+            //jackson 序列化和反序列化 date处理
+            mapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
+            mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+            //JSON字符串转 HashMap
+            HashMap map = mapper.readValue(_message, HashMap.class);
+
+            //先解密
+            String data = (String) map.get("data");
+            String aesKey = (String) map.get("aesKey");
+            System.out.println("加密后："+data);
+            System.out.println("密钥："+aesKey);
+
+            //AES解密得到明文data数据
+            decrypt = AesUtil.decrypt(data, aesKey);
+            System.out.println("解密后："+decrypt);
+//            //JSON字符串转 HashMap
+//            HashMap hashMap = mapper.readValue(decrypt, HashMap.class);
+//            //得到hashMap，下面的业务操作跟前面的一样，这里就不贴出来了
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        JSONObject chat = JSON.parseObject(decrypt);
         JSONObject message = JSON.parseObject(chat.get("message").toString());
         if(message.get("to") == null || message.get("to").equals("")){      //如果to为空,则广播;如果不为空,则对指定的用户发送消息
-            broadcast(_message);
+            broadcast(decrypt);
         }else{
             String [] userlist = message.get("to").toString().split(",");
-            singleSend(_message, (Session) routetab.get(message.get("from")));      //发送给自己,这个别忘了
+            singleSend(decrypt, (Session) routetab.get(message.get("from")));      //发送给自己,这个别忘了
             for(String user : userlist){
                 if(!user.equals(message.get("from"))){
-                    singleSend(_message, (Session) routetab.get(user));     //分别发送给每个指定用户
+                    singleSend(decrypt, (Session) routetab.get(user));     //分别发送给每个指定用户
                 }
             }
         }
