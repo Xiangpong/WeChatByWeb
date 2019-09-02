@@ -240,7 +240,6 @@
         }
         $("#tuling").text() == "已上线"? tuling(message):console.log("图灵机器人未开启");  //检测是否加入图灵机器人
             let aesKey = aesUtil.genKey();
-            alert(aesKey)
             let data = {
                 data:aesUtil.encrypt(JSON.stringify({
                     message : {

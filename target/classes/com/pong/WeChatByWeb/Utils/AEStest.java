@@ -7,7 +7,7 @@ public class AEStest {
         String key = "MIGfMA0GCSqGSIb3";
 
         //字符串
-        String str = "huanzi.qch@qq.com:欢子";
+        String str = "唱、跳、Rap、篮球";
         try {
             //加密
             String encrypt = AesUtil.encrypt(str, key);

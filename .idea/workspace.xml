@@ -2,43 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e9dad69-d950-4b0b-9cd9-66226f607a8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/WebSocket/WebSocketServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/AEStest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ComplexAesTest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ComplexRasTest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/RasTest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/source/js/rasUtil.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Utils/REStest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Utils/RSAtest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/WebSocket/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/WebSocket/ChatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Utils/AEStest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Utils/AEStest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/WebSocket/VideoServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/WebSocket/WebSocketServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/AEStest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/AEStest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/source/img/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/source/img/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/source/js/AES.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/source/js/aesUtil.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Utils/REStest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Utils/REStest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/WebSocket/ChatServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/WebSocket/ChatServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/WebSocket/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/WebSocket/ChatServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2019-08-30" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/about_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/about_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/help_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/help_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/include/commonfile_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/include/commonfile_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/include/footer_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/include/footer_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/include/header_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/include/header_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/include/sidebar_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/include/sidebar_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/index_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/index_jsp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/index_jsp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/info_002dsetting_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/info_002dsetting_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/information_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/information_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/log_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/log_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/login_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/login_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Utils/AEStest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Utils/AEStest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Utils/AEStest.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pong/WeChatByWeb/Utils/AEStest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,19 +28,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Utils/AesUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2349">
-              <caret line="99" selection-start-line="99" selection-end-line="99" />
+              <caret line="99" selection-end-line="111" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/WebSocket/HttpSessionConfigurator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -103,6 +65,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2030">
+              <caret line="243" column="53" selection-start-line="241" selection-start-column="11" selection-end-line="253" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_192/src.zip!/java/lang/Object.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="64">
@@ -111,56 +82,49 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Utils/AEStest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+            <state relative-caret-position="264">
+              <caret line="22" column="5" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="22" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/source/js/aesUtil.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="27" column="25" selection-end-line="37" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/source/js/CryptoJs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/AEStest.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="20" column="55" lean-forward="true" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/WebSocket/ChatServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
-              <caret line="89" column="43" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
+            <state relative-caret-position="187">
+              <caret line="100" column="9" lean-forward="true" selection-start-line="75" selection-start-column="8" selection-end-line="100" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.2.3/jackson-databind-2.2.3.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="126" selection-start-line="126" selection-end-line="126" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.7/fastjson-1.2.7.jar!/com/alibaba/fastjson/JSON.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="536" selection-start-line="536" selection-end-line="536" />
-              <folding>
-                <element signature="e#19327#19328#0" expanded="true" />
-                <element signature="e#19369#19370#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.7/fastjson-1.2.7.jar!/com/alibaba/fastjson/serializer/SerializeWriter.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="e#803#804#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -192,7 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/spring/spring_Mybatis.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Service/Impl/LogServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Service/Impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Dao/ILogDao.java" />
@@ -224,7 +187,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Utils/RsaUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Utils/test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Utils/AEStest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Utils/REStest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/source/js/AES.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/include/sidebar.jsp" />
@@ -241,8 +203,10 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/ComplexRasTest.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/WebSocket/WebSocketServer.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/source/js/CryptoJs.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/WebSocket/ChatServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Utils/AEStest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/AEStest.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
       </list>
     </option>
   </component>
@@ -600,7 +564,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567395467764" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567419099426" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SSMproject" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -641,7 +605,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.WCBW ">
+  <component name="RunManager" selected="Application.AEStest">
     <configuration name="AEStest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pong.WeChatByWeb.Utils.AEStest" />
       <module name="WCBW" />
@@ -726,12 +690,12 @@
       <workItem from="1566987258965" duration="2915000" />
       <workItem from="1567046818568" duration="10416000" />
       <workItem from="1567069383233" duration="12959000" />
-      <workItem from="1567385114018" duration="10157000" />
+      <workItem from="1567385114018" duration="15006000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117627000" />
+    <option name="totallyTimeSpent" value="122476000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -756,7 +720,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.16611296" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37209302" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3139535" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -825,12 +789,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/WebSocket/ChatServer.java</url>
-          <line>75</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/WebSocket/ChatServer.java</url>
           <line>86</line>
@@ -1017,24 +975,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/source/js/jsencrypt.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/source/js/aesUtil.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/ComplexAesTest.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
           <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/AEStest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="15" selection-end-line="29" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1076,13 +1020,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/source/js/CryptoJs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/WebSocket/WebSocketServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-160">
@@ -1090,16 +1027,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#475#492#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="243" column="20" selection-start-line="243" selection-start-column="16" selection-end-line="243" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1180,20 +1107,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/WebSocket/ChatServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="89" column="43" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Utils/AesUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2349">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
+          <caret line="99" selection-end-line="111" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1202,8 +1119,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/Utils/AEStest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        <state relative-caret-position="264">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/source/js/CryptoJs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/AEStest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="20" column="55" lean-forward="true" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/source/js/aesUtil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="27" column="25" selection-end-line="37" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2030">
+          <caret line="243" column="53" selection-start-line="241" selection-start-column="11" selection-end-line="253" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pong/WeChatByWeb/WebSocket/ChatServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="100" column="9" lean-forward="true" selection-start-line="75" selection-start-column="8" selection-end-line="100" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
