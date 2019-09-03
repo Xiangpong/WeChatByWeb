@@ -19,6 +19,8 @@
     <script src="../../static/source/js/aesUtil.js"></script>
     <script src="../../static/source/js/rasUtil.js"></script>
     <style type="text/css">
+
+
         .toolbar {
             border: 1px solid #ccc;
         }
@@ -35,7 +37,7 @@
 
     <!-- content start -->
     <div class="admin-content"  >
-        <div class="" style="width:80%;float:left;padding-left: 20px;">
+        <div class="" style="width:80%;float:left;padding-left: 20px;height:100%;">
             <!-- 聊天区 -->
             <div class="am-scrollable-vertical" id="chat-view" style="height: 63%">
                 <ul class="am-comments-list am-comments-list-flip" id="chat">
@@ -297,7 +299,7 @@
     function showChat(message){
         var to = message.to == null || message.to == ""? "全体成员" : message.to;   //获取接收人
         var isSef = '${userid}' == message.from ? "am-comment-flip" : "";   //如果是自己则显示在右边,他人信息显示在左边
-        var html = "<li class=\"am-comment "+isSef+" am-comment-primary\"><a href=\"#link-to-user-home\"><img width=\"48\" height=\"48\" class=\"am-comment-avatar\" alt=\"\" src=\"${ctx}/"+message.from+"/head\"></a><div class=\"am-comment-main\">\n" +
+        var html = "<li class=\"am-comment "+isSef+" am-comment-primary\"><a href=\"#link-to-user-home\"><img width=\"48\" height=\"48\" class=\"am-comment-avatar\" alt=\"\" src=\"${ctx}/"+message.from+"/head\"></a><div class=\"am-comment-main\" >\n" +
             "<header class=\"am-comment-hd\"><div class=\"am-comment-meta\">   <a class=\"am-comment-author\" href=\"#link-to-user\">"+message.from+"</a> 发表于<time> "+message.time+"</time> 发送给: "+to+" </div></header><div class=\"am-comment-bd\"> <p>"+message.content+"</p></div></div></li>";
         $("#chat").append(html);
         $("#div2").val("");  //清空输入区

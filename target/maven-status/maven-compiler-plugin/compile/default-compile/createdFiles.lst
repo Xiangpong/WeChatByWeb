@@ -26,10 +26,6 @@ com\pong\WeChatByWeb\Utils\FileUtil.class
 com\pong\WeChatByWeb\Utils\UploadUtil.class
 com\pong\WeChatByWeb\Pojo\ResultUtil.class
 com\pong\WeChatByWeb\Utils\StringUtil.class
-com\pong\WeChatByWeb\WebSocket\VideoServer.class
 com\pong\WeChatByWeb\Utils\AesUtil.class
-com\pong\WeChatByWeb\Utils\RsaUtil.class
-com\pong\WeChatByWeb\WebSocket\WebSocketServer.class
 com\pong\WeChatByWeb\Utils\LogUtil.class
 com\pong\WeChatByWeb\Utils\AEStest.class
-com\pong\WeChatByWeb\Utils\RSAtest.class
