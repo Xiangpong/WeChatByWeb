@@ -29,7 +29,7 @@
         <json>20150729</json>
         <jackson-mapper-asl>1.9.13</jackson-mapper-asl>
         <jackson-core>2.2.3</jackson-core>
-        <jackson-databind>2.2.3</jackson-databind>
+        <jackson-databind>2.9.10.4</jackson-databind>
         <jackson-annotations>2.2.3</jackson-annotations>
         <commons-dbcp>1.4</commons-dbcp>
         <commons-beanutils>1.9.2</commons-beanutils>
